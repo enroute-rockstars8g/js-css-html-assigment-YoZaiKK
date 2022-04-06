@@ -169,10 +169,10 @@ function fibo() {
     const myParagraph = document.getElementById("fiboPara");
     let valorFibo = document.getElementById("fibo").value;
     valorFibo = fiboFun(valorFibo);
-    myParagraph.innerHTML = `<b style: "text-align = center"> ${valorFibo} </b><br>`;
+    myParagraph.innerHTML = `<b style: "text-align = center">Valor de Fibonacci ${valorFibo} </b><br>`;
     document.body.appendChild(myParagraph);
     for (let index = 0; index < valorFibo; index++) {
-        myParagraph.innerHTML += `<br><ul>😈</ul>`;
+        myParagraph.innerHTML += `<br><ul>🐸</ul>`;
         document.body.appendChild(myParagraph);
     }
 }
@@ -186,5 +186,27 @@ function fiboFun(n) {
             arr.push(arr[i - 1] + arr[i - 2]);
         }
         return arr[n - 1];
+    }
+}
+
+function factorial() {
+    console.log("Hello");
+    const myParagraph = document.getElementById("factorialPara");
+    let valorFacto = document.getElementById("factorial").value;
+    valorFacto = factorialFun(valorFacto);
+    myParagraph.innerHTML = `<b style: "text-align = center">Valor Factorial: ${valorFacto} </b><br>`;
+    document.body.appendChild(myParagraph);
+    for (let index = 0; index < valorFacto; index++) {
+        myParagraph.innerHTML += `<br><ul>🐸</ul>`;
+        document.body.appendChild(myParagraph);
+    }
+}
+
+function factorialFun(n) {
+    if (n == 0) {
+        return 1;
+    }
+    if (n > 0) {
+        return n * factorialFun(n - 1);
     }
 }
