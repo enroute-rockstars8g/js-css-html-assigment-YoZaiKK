@@ -1,0 +1,44 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    position: relative;
+    left: 25%;
+    right: 25%;
+    background-color: #F2CC8F;
+    height: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+button {
+    grid-area: a;
+}
+
+div,
+header {
+    position: relative;
+    width: 50%;
+}
+
+h2,
+h1 {
+    color: #3D405B;
+    font-style: italic;
+}
+
+h1 {
+    font-family: georgia;
+}
+
+p {
+    text-align: justify;
+    margin: 10px;
+}
+
+a {
+    font-style: oblique;
+    text-decoration: none;
+}
